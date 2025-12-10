@@ -101,8 +101,8 @@ int main(void)
 ```
 ```C
 /* inputs:
- *5/6
- *3/4
- *The sum is 38/24
+ * 5/6
+ * 3/4
+ * The sum is 38/24
  */
 ```
