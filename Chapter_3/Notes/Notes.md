@@ -3,6 +3,7 @@
 -  The `printf` function's function is to display the contents of a string, known as the **_format string_**.
 	`printf(string, expr1, expr2, ...);`
 *  The values displayed can be constants, variables, or more complicated expressions. There's no limit on the number of values that can be printed by a single call of printf.
+
 ## _Conversion specifications_ 
 
 - begin with the `%` character. Is a placeholder to the value that will be converted. The value is converted from its binary to printed characters. 
@@ -69,7 +70,7 @@ int main(void)
 int i, j;
 float x, y;
 
-scanf("%d%d%f%", &i, &j, &x, &y);
+scanf("%d%d%f%f", &i, &j, &x, &y);
 ```
 
 ## _Ordinary Characters in Format Strings_
