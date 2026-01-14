@@ -1,0 +1,1 @@
+Yes, because the second operand will always match the signal of the first operand, meaning the whole operation is negative both ways
