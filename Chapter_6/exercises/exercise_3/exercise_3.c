@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int i, j;
+
+    for (i = 5, j = i - 1; i > 0, j > 0; --i, j = i - 1)
+        printf("%d ", i);
+}
+/*
+5 4 
+4 3
+3 2
+2 1
+
+output: 5 4 3 2 
+*/
