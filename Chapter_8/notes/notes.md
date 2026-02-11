@@ -77,3 +77,45 @@ int c[10] = {5, 1, 9, [4] = 3, 7, 2, [8] = 6};
     - `(int) sizeof(a) / sizeof(a[0])`
 
 ![interest.c](images/image)
+
+## 8.2 - Multidimensional Arrays
+
+- An array can have any number of dimensions
+- An 2D matrix has the form:
+    - `int m[5][9];` 5 rows and 9 columns
+- C stores arrays in **row-major order**
+    - ![row major order](images/image-1.png)
+
+- Usually, nested `for` loops are used to visit each element in a 2d array
+
+```C
+#define N 10
+
+double ident[N][N];
+int row, col;
+
+for (row = 0; row < N; row++)
+    for (col = 0; col < N; col++)
+        if (row == col)
+            ident[row][col] = 1.0;
+        else
+            ident[row][col] = 0.0;
+```
+
+### Initiliazing Multidimensional Array
+
+- Usually by nesting curly braces and inserting values inside
+    - ![Initializing 2D array](images/image-2.png)
+
+- Ommiting the inner braces may cause compiler warnings or errors
+- If isnt large enough, the rest will be initialized to 0
+- in C99, *designated initializers* work for 2D arrays 
+
+
+![deal.c](images/image-3.png)
+
+## 8.3 - Variable-Length Arrays (C99)
+
+- Its possible to use non-constant variables in C99 to declare the length of an array
+
+![reverse2.c](images/image-4.png)
