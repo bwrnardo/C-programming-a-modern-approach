@@ -31,7 +31,7 @@ int main(void)
                 break;
             case 'O':
                 putchar('0');
-                break;
+                  break;
             case 'S':
                 putchar('5');
                 break;
